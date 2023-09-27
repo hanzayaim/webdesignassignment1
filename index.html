@@ -4,68 +4,116 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>form</title>
+    <title>Web Design - Group 4</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 5px;
+        }
+
+        nav {
+            text-align: center;
+            background-color: #ffc0cb;
+            color: #000;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: #000;
+            margin: 0 10px;
+        }
+
+        table {
+            margin: 0;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px sold #ccc;
+        }
+
+        th, td {
+            padding: 10px
+        }
+
+    </style>
   </head>
   <body>
     <nav>
-      <a href="index.html">Home</a> | <a href="about.html">About Us</a> |
-      <a href=".contact">Contact</a>
+      <a href="#">Home</a> | <a href="#">Lecture</a> |
+      <a href="#">Students</a> | <a href="#">Contact</a>
     </nav>
     <hr />
 
-    <h1>WEB DESIGN - KELOMPOK 4</h1>
+    <h1 style="text-align: center;">WEB DESIGN - GROUP 4</h1>
+    <img src="programming.gif" style="display: block; margin: 0 auto;">
 
-    <table border="1">
+    <table border="1" style="align-items: center;">
+        <thead>
+            <legend style="font-size: 25px;">Lecture</legend>
+            <tr>
+                <td>Photo</td>
+                <td>Lecture ID</td>
+                <td>Name</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img style="width: 50px;" src="profile.png"></td>
+                <td>D5428</td>
+                <td>Brilly Andro Makalev, S.Kom, M.T.I</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table border="1" style="align-items:center" >
       <thead>
+        <legend style="font-size: 25px;">Students</legend>
         <tr>
-          <td>FOTO</td>
-          <td>NAMA</td>
-          <td>JURUSAN</td>
-          <td>TANGGAL LAHIR</td>
-          <td>HOBI</td>
+          <td>Photo</td>
+          <td>Student ID</td>
+          <td>Name</td>
+          <td>Major</td>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td><a href=""></a></td>
+          <td><img style="width: 50px;" src ="profile.png"></td>
           <td>Alysha Nadira</td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>2501971553</td>
+          <td>Visual Communication Design</td>
         </tr>
         <tr>
-          <td><a href=""></a></td>
+          <td><img style="width: 50px;" src="profile.png"></td>
           <td>Bryan Viriya Kurniawan</td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>2501964964</td>
+          <td>Computer Science</td>
         </tr>
         <tr>
-          <td><a href=""></a></td>
-          <td>Raihan Daffa Rizky</td>
-          <td></td>
-          <td></td>
-          <td></td>
+            <td><img style="width: 50px;" src="profile.png"></td>
+            <td>Raihan Daffa Rizky</td>
+            <td>2501995370</td>
+            <td>Computer Science</td>
         </tr>
         <tr>
-          <td><a href=""></a></td>
+          <td><img style="width: 50px;" src="profile.png"></td>
           <td>Rakha Aiman Mumtaz</td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>2440117274</td>
+          <td>Computer Science</td>
         </tr>
         <tr>
-          <td><a href=""></a></td>
+          <td><img style="width: 50px;" src="profile.png"></td>
           <td>Riccardo</td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>2502017572</td>
+          <td>Computer Science</td>
         </tr>
       </tbody>
     </table>
 
+    <br>
     <form action="#contact">
-      <fieldset>
+      <fieldset style="width: 500px; align-items:center">
         <legend style="font-size: 25px;">Contact Us</legend>
         <label for="firstname">First name :</label>
         <input type="text" id="firstname" autocomplete />
@@ -92,5 +140,10 @@
         <input type="submit" value="Submit" />
       </fieldset>
     </form>
+
+    <audio controls style="display: block;">
+        <source src="song.mp3" type="audio/mp3">
+    </audio>
+
   </body>
 </html>
